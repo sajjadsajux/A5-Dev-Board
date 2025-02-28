@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- daisy and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy and tailwind cdn -->
+  </head>
+  <body class="bg-indigo-50 mx-auto pt-3 pb-10 text-center">
+    <nav
+      class="flex justify-between items-center bg-white w-9/12 mx-auto px-5 py-3 rounded-2xl md:container"
+    >
+      <div class="flex justify-center items-center gap-2">
+        <img src="assets/logo.png" alt="" />
+        <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div>
+        <button
+          id="back-btn"
+          class="btn bg-[#3752FD] border-none text-white px-4 text-xl cursor-pointer"
+        >
+          Back To Desk
+        </button>
+      </div>
+    </nav>
+    <h1 class="text-3xl font-bold mt-10">Blogs</h1>
+    <!-- faq -->
+    <section class="md:container mx-auto text-left">
+      <div class="collapse bg-white">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div
+          class="collapse-title text-xl font-medium border-b-2 border-opacity-50"
+        >
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-white">
+        <input type="radio" name="my-accordion-1" />
+        <div
+          class="collapse-title text-xl font-medium border-b-2 border-opacity-50"
+        >
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+
+      <div class="collapse bg-white">
+        <input type="radio" name="my-accordion-1" />
+        <div
+          class="collapse-title text-xl font-medium border-b-2 border-opacity-50"
+        >
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-white">
+        <input type="radio" name="my-accordion-1" />
+        <div
+          class="collapse-title text-xl font-medium border-b-2 border-opacity-50"
+        >
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-white">
+        <input type="radio" name="my-accordion-1" />
+        <div
+          class="collapse-title text-xl font-medium border-b-2 border-opacity-50"
+        >
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </section>
+    <script src="./script/discover.js"></script>
+  </body>
+</html>
