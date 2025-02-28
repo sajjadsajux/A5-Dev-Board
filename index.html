@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev BOARD</title>
+    <!-- daisy and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy and tailwind cdn -->
+  </head>
+  <body class="bg-indigo-50 mx-auto pt-3 pb-10">
+    <!-- nav bar -->
+    <header class="">
+      <nav
+        class="flex justify-between items-center bg-white w-9/12 mx-auto px-5 py-3 rounded-2xl md:container"
+      >
+        <div class="flex justify-center items-center gap-2">
+          <img src="assets/logo.png" alt="" />
+          <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex justify-center items-center gap-8">
+          <div
+            class="flex justify-center items-center gap-5 bg-blue-50 p-3 rounded-3xl"
+          >
+            <img class="" src="assets/checkbox.png" alt="" />
+            <h3 class="text-3xl font-bold">12</h3>
+          </div>
+          <div>
+            <img
+              class="bg-blue-50 p-2 rounded-3xl"
+              src="assets/theme-btn.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- nav bar -->
+
+    <main class="grid grid-cols-4 w-9/12 mx-auto mt-5 gap-5 md:container">
+      <!-- main content left sidde -->
+      <section class="left-container bg-white col-span-3 pt-10 rounded-2xl">
+        <!-- firs line cards -->
+        <div class="grid grid-cols-4 px-5 gap-5">
+          <div
+            class="flex justify-center items-center gap-4 bg-indigo-50 p-4 rounded-xl"
+          >
+            <div class="bg-white p-3 rounded-3xl">
+              <img class="" src="assets/checkbox.png" alt="" />
+            </div>
+            <div>
+              <p>Task Assigned</p>
+              <h5 class="text-3xl font-bold">06</h5>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500 p-4 rounded-xl col-span-2 gap-5"
+          >
+            <div>
+              <img class="" src="assets/board.png" alt="" />
+            </div>
+            <div>
+              <h5 class="text-2xl font-bold text-white">
+                Discover Something <br />
+                New Today!
+              </h5>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex justify-center items-center gap-4 bg-indigo-50 p-4 rounded-xl"
+          >
+            <div class="class= bg-white p-3 rounded-3xl">
+              <img src="assets/calender.png" alt="" />
+            </div>
+            <div>
+              <p>Task Assigned</p>
+              <h5 class="text-3xl font-bold">05</h5>
+            </div>
+          </div>
+        </div>
+        <hr class="border-t-1 border-dashed border-gray-300 mt-10 opacity-50" />
+        <!-- more 6 cards -->
+        <div class="grid grid-cols-3 mt-10 px-5 gap-8 mb-10">
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">ShopEase</p>
+            <h3 class="text-2xl font-bold">Fix Mobile Button Issue</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Debug using Chrome <br />
+              DevTools, check for overlapping elements, and ensure onClick works
+              properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 1stcard -->
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">CloudSync</p>
+            <h3 class="text-2xl font-bold">Add Dark Mode</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Store the user's preference in <br />
+              localStorage, update CSS variables dynamically, and apply a smooth
+              transition effect.
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 12stcard -->
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">SwiftPay</p>
+            <h3 class="text-2xl font-bold">Optimize Home page</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Optimize your homepage by improving <br />
+              load speed, enhancing mobile responsiveness, and simplifying
+              navigation for a better user experience
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 3stcard -->
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">Meta</p>
+            <h3 class="text-2xl font-bold">Add new emoji 🤲</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Add new emojis by customizing <br />
+              your platform’s emoji set or integrating third-party libraries for
+              a wider range of symbols
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 4stcard -->
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">Google LLC</p>
+            <h3 class="text-2xl font-bold">Integrate OpenAI API</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Integrate OpenAI API into <br />
+              your projects by exploring its capabilities, understanding the
+              documentation, and experimenting with custom solutions
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 5stcard -->
+          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+            <p class="bg-white inline-block p-3 rounded-xl">Glassdoar</p>
+            <h3 class="text-2xl font-bold">Improve Job searching</h3>
+            <p class="truncate bg-white p-3 rounded-xl">
+              Enhance your web development <br />
+              job search by building a strong portfolio, mastering key
+              frameworks, and networking with industry professionals
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <p>Deadline</p>
+                <p class="font-bold">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary text-white">Completed</button>
+            </div>
+          </div>
+          <!-- 6stcard -->
+        </div>
+      </section>
+      <!-- right side bar -->
+      <section class="right-container bg-white pt-10 rounded-2xl">
+        <div class="items-center text-center space-y-5">
+          <div class="flex justify-center items-center gap-2">
+            <img src="assets/activity.png" alt="" />
+            <h3 class="text-xl font-bold">Activity Log</h3>
+          </div>
+          <button class="btn bg-[#3752FD] border-none text-white px-4 text-xl">
+            Clear History
+          </button>
+        </div>
+        <hr class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50" />
+      </section>
+    </main>
+  </body>
+</html>
