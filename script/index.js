@@ -1,6 +1,18 @@
 document.getElementById("discover-btn").addEventListener("click", function () {
-  window.location.href = "../blogs.html";
+  window.location.href = "../A5-Dev-Board/blogs.html";
 });
+
+const now = new Date();
+const options = {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+};
+document.getElementById("currentDate").innerText = now.toLocaleDateString(
+  "en-US",
+  options
+);
 
 const taskCount = document.getElementById("taskCount");
 let clickedButtons = 0;
@@ -17,9 +29,12 @@ function handleClick(buttonId) {
   let sum2 = ntaskCountAdd + 1;
   taskCountAdd.innerHTML = sum2;
 
+  const now = new Date();
+  const timeNow = now.toLocaleTimeString();
+
   const p = document.createElement("p");
   p.innerText = `
-  You Have Completed the task
+  You Have Completed the task at ${timeNow}
   
   `;
   msgBox.appendChild(p);
