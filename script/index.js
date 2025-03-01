@@ -2,18 +2,6 @@ document.getElementById("discover-btn").addEventListener("click", function () {
   window.location.href = "/A5-Dev-Board/blogs.html";
 });
 
-const now = new Date();
-const options = {
-  weekday: "long",
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-};
-document.getElementById("currentDate").innerText = now.toLocaleDateString(
-  "en-US",
-  options
-);
-
 const taskCount = document.getElementById("taskCount");
 let clickedButtons = 0;
 const taskCountAdd = document.getElementById("taskCountAdd");
@@ -32,11 +20,22 @@ function handleClick(buttonId) {
   const now = new Date();
   const timeNow = now.toLocaleTimeString();
 
+  const taskContainer = btn.closest(".tittleText");
+  const taskTitle = taskContainer.querySelector("h3").innerText;
+
   const p = document.createElement("p");
+
   p.innerText = `
-  You Have Completed the task at ${timeNow}
+  You have completed the task ${taskTitle} at ${timeNow} 
   
   `;
+  p.style.backgroundColor = "#F4F7FF";
+  p.style.textAlign = "center";
+  p.style.padding = "8px";
+
+  p.style.borderRadius = "30px";
+  p.style.marginTop = "7px";
+
   msgBox.appendChild(p);
 
   btn.disabled = true;
@@ -44,7 +43,7 @@ function handleClick(buttonId) {
   alert("Board Updated Successfully");
   clickedButtons++;
   if (clickedButtons === 6) {
-    alert("Congratss, You've successfully complete all the pending task");
+    alert("Congrates, You've successfully complete all the pending task");
   }
 }
 
@@ -65,4 +64,8 @@ document.getElementById("btnTwo").addEventListener("click", function () {
 });
 document.getElementById("btnOne").addEventListener("click", function () {
   handleClick("btnOne");
+});
+
+document.getElementById("clearBtn").addEventListener("click", function () {
+  msgBox.innerHTML = "";
 });

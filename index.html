@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy and tailwind cdn -->
   </head>
-  <body class="bg-indigo-50 mx-auto pt-3 pb-10">
+  <body id="body-tag" class="bg-indigo-50 mx-auto pt-3 pb-10">
     <!-- nav bar -->
     <header class="">
       <nav
@@ -30,7 +30,7 @@
             <img class="" src="assets/checkbox.png" alt="" />
             <h3 id="taskCountAdd" class="text-3xl font-bold">12</h3>
           </div>
-          <div>
+          <div id="colorBtn">
             <img
               class="bg-blue-50 p-2 rounded-3xl"
               src="assets/theme-btn.png"
@@ -83,14 +83,14 @@
               <img src="assets/calender.png" alt="" />
             </div>
             <div>
-              <h5 id="currentDate" class="text-2xl">6</h5>
+              <h5 id="currentDate" class="">6</h5>
             </div>
           </div>
         </div>
         <hr class="border-t-1 border-dashed border-gray-300 mt-10 opacity-50" />
         <!-- more 6 cards -->
         <div class="grid grid-cols-3 mt-10 px-5 gap-8 mb-10">
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">ShopEase</p>
             <h3 class="text-2xl font-bold">Fix Mobile Button Issue</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -98,6 +98,9 @@
               DevTools, check for overlapping elements, and ensure onClick works
               properly and ensure onClick works properly
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -109,7 +112,7 @@
             </div>
           </div>
           <!-- 1stcard -->
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">CloudSync</p>
             <h3 class="text-2xl font-bold">Add Dark Mode</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -117,6 +120,10 @@
               localStorage, update CSS variables dynamically, and apply a smooth
               transition effect.
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
+
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -128,7 +135,7 @@
             </div>
           </div>
           <!-- 12stcard -->
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">SwiftPay</p>
             <h3 class="text-2xl font-bold">Optimize Home page</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -136,6 +143,9 @@
               load speed, enhancing mobile responsiveness, and simplifying
               navigation for a better user experience
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -147,7 +157,7 @@
             </div>
           </div>
           <!-- 3stcard -->
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">Meta</p>
             <h3 class="text-2xl font-bold">Add new emoji 🤲</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -155,6 +165,9 @@
               your platform’s emoji set or integrating third-party libraries for
               a wider range of symbols
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -166,7 +179,7 @@
             </div>
           </div>
           <!-- 4stcard -->
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">Google LLC</p>
             <h3 class="text-2xl font-bold">Integrate OpenAI API</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -174,6 +187,9 @@
               your projects by exploring its capabilities, understanding the
               documentation, and experimenting with custom solutions
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -185,7 +201,7 @@
             </div>
           </div>
           <!-- 5stcard -->
-          <div class="bg-blue-50 p-5 space-y-7 rounded-xl">
+          <div class="tittleText bg-blue-50 p-5 space-y-7 rounded-xl">
             <p class="bg-white inline-block p-3 rounded-xl">Glassdoar</p>
             <h3 class="text-2xl font-bold">Improve Job searching</h3>
             <p class="truncate bg-white p-3 rounded-xl">
@@ -193,6 +209,9 @@
               job search by building a strong portfolio, mastering key
               frameworks, and networking with industry professionals
             </p>
+            <hr
+              class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50"
+            />
             <div class="flex justify-between items-center">
               <div>
                 <p>Deadline</p>
@@ -213,16 +232,21 @@
             <img src="assets/activity.png" alt="" />
             <h3 class="text-xl font-bold">Activity Log</h3>
           </div>
-          <button class="btn bg-[#3752FD] border-none text-white px-4 text-xl">
+          <button
+            id="clearBtn"
+            class="btn bg-[#3752FD] border-none text-white px-4 text-xl"
+          >
             Clear History
           </button>
         </div>
         <hr class="border-t-1 border-dashed border-gray-300 mt-5 opacity-50" />
-        <div id="msgBox"></div>
+        <div id="msgBox" class="px-5"></div>
       </section>
     </main>
 
     <script src="script/index.js"></script>
     <script src="script/discover.js"></script>
+    <script src="script/bgcolor.js"></script>
+    <script src="script/presentdate.js"></script>
   </body>
 </html>
