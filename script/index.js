@@ -1,5 +1,5 @@
 document.getElementById("discover-btn").addEventListener("click", function () {
-  window.location.href = "../A5-Dev-Board/blogs.html";
+  window.location.href = "/blogs.html";
 });
 
 const now = new Date();
